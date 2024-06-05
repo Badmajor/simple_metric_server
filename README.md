@@ -9,19 +9,27 @@
 3. 10 мин времени
 
 ### Клонируем репозиторий
+```bash
 git clone https://github.com/Badmajor/simple_metric_server.git
+```
 
 ### Переходим в каталог с docker файлом
+```bash
 cd simple_metric_server/
+```
 
 ### Создаем .env
+```bash
 echo "USER=root
 PASSWORD=<ВАШ_ПАРОЛЬ>" > .env
+```
 
 замените ВАШ_ПАРОЛЬ на ваш пароль
 
 ### Запускаем оркестр контейнеров
+```bash
 sudo docker compose up -d
+```
 
 ### Настроим отображение метрик
 переходим по адресу <АДРЕС_ВАШЕГО_СЕРВЕРА>:3000 
